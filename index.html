@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonathan Gonçalves Ribeiro</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="wrapper">
       <div class="presentation">
         <div class="profile">
           <img class="profile__picture" src="./images/perfil.png" alt="" />
-          <h3>Hey 👋🏼</h3>
+          <h3 class="title__hey">Hey 👋🏼</h3>
         </div>
 
         <h1 class="title">
@@ -32,45 +38,26 @@
         </div>
       </div>
 
-      <section class="projetcs">
+      <section class="projects">
         <h1 class="projects__title">Projects</h1>
 
         <div class="project__container">
-          <a href="#">
-            <img class="project__image" src="./images/netbook.png" alt="" />
-            <div class="project__content">
-              <h1 class="projetcs__content-title">Netbook - Social Network</h1>
-              <ul>
-                <li class="project__content-detail">HTML</li>
-                <li class="project__content-detail">CSS</li>
-                <li class="project__content-detail">JAVASCRIPT</li>
-                <li class="project__content-detail">RESPONSIVE</li>
-              </ul>
+          <a class="project__image-detail" href="#">
+            <div class="project__image">
+              <img src="./images/netbook.png" alt="" />
             </div>
           </a>
-        </div>
 
-        <!-- 
-        <div class="project__container">
-          <a href="#">
-            <img class="project__image" src="./images/lasles-vpn.png" alt="" />
-            <h1 class="projetcs__content-title">Lasles - VPN Company</h1>
-            <p class="project__content-detail">HTML</p>
-            <p class="project__content-detail">CSS</p>
-            <p class="project__content-detail">JAVASCRIPT</p>
-            <p class="project__content-detail">RESPONSIVE</p></a
-          >
+          <div class="project__content">
+            <h1 class="projects__content-title">Netbook - Social Network</h1>
+            <ul class="project__content-list">
+              <li class="project__content-detail">HTML</li>
+              <li class="project__content-detail">CSS</li>
+              <li class="project__content-detail">JAVASCRIPT</li>
+              <li class="project__content-detail">RESPONSIVE</li>
+            </ul>
+          </div>
         </div>
-
-        <div class="project__container">
-          <a href="#">
-            <img class="project__image" src="./images/lasles-vpn.png" alt="" />
-            <h1 class="projetcs__content-title">Responsive Pop-up</h1>
-            <p class="project__content-detail">HTML</p>
-            <p class="project__content-detail">CSS</p>
-            <p class="project__content-detail">RESPONSIVE</p></a
-          >
-        </div> -->
       </section>
     </main>
   </body>
