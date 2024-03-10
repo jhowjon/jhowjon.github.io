@@ -44,6 +44,17 @@ body {
   height: calc(100vh - 60px);
   border: 1px solid rgba(210, 210, 210, 0.59);
   overflow-y: scroll;
+  background-position: -1px;
+  background-image: repeating-linear-gradient(
+      rgba(212, 212, 212, 0.31) 0 1px,
+      transparent 1px 100%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(212, 212, 212, 0.31) 0 1px,
+      transparent 1px 100%
+    );
+  background-size: 202px 256px;
 }
 
 .presentation {
