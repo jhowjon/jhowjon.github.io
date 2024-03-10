@@ -75,6 +75,33 @@ body {
   color: rgba(25, 25, 25, 1);
 }
 
+.links__contact-title {
+  margin-bottom: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(37, 99, 235, 1);
+}
+
+.links__contact-image {
+  width: 18px;
+}
+
+.links__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: start;
+}
+
+.links__contact-detail {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(25, 25, 25, 1);
+  border-bottom: 1px solid rgba(25, 25, 25, 1);
+}
+
 .projects {
   width: 50%;
 }
