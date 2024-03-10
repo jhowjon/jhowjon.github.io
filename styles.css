@@ -6,6 +6,8 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  scrollbar-width: auto;
+  scrollbar-color: transparent transparent;
 }
 
 img {
@@ -14,6 +16,20 @@ img {
 
 body {
   padding: 30px;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }
 
 .wrapper {
@@ -27,10 +43,14 @@ body {
   border-radius: 50px;
   height: calc(100vh - 60px);
   border: 1px solid rgba(210, 210, 210, 0.59);
+  overflow-y: scroll;
 }
 
 .presentation {
   width: 36%;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .profile {
@@ -114,15 +134,22 @@ body {
   color: rgba(49, 50, 75, 1);
 }
 
+.project__container {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
 .project__image {
   width: 288px;
   height: 187px;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid rgba(234, 234, 234, 1);
+  box-shadow: 0px 4px 10px 0px rgba(206, 206, 206, 0.15);
 }
 
-.project__container {
+.project__item {
   display: flex;
   gap: 16px;
 }
